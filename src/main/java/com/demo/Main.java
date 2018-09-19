@@ -7,7 +7,7 @@ import java.util.logging.*;
 
 public class Main {
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
 
         System.out.println("Text");
 
@@ -21,17 +21,17 @@ public class Main {
             e.printStackTrace();
         }
 
-            log.info("Info has started");
-            log.warning("Warning has started");
+        log.info("Info has started");
+        log.warning("Warning has started");
 
-            Handler logHandler = new ConsoleHandler();
-            logHandler.setLevel(Level.FINEST);
-            log.setLevel(Level.FINE);
-            log.addHandler(logHandler);
+        Handler logHandler = new ConsoleHandler();
+        logHandler.setLevel(Level.FINEST);
+        log.setLevel(Level.FINE);
+        log.addHandler(logHandler);
 
-            log.fine("Fine has started");
+        log.fine("Fine has started");
 
-
-        }
 
     }
+
+}
